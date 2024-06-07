@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Arcadia - Habitats</title>
+<link rel="stylesheet" href="csshabitatest.css">
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('topnav');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+</script>
+</head>
+<body>
+    <div class="topnav-container">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="topnav" id="topnav">
+            <a href="#home" class="active">Arcadia</a>
+            <a href="#habitats">Habitats</a>
+            <a href="#restauration">Restauration</a>
+            <a href="#nous-trouver">Nous trouver</a>
+            <a href="#connexion">Connexion</a>
+        </div>
+    </div> 
+
+    <header id="header">
+        <div class="header-image">
+            <img src="imagesbanner.jpg" alt="Banner image">
+            <div class="banner-content">Arcadia - Le Zoo de demain</div>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#notre-histoire">Qui sommes nous ?</a></li>
+            <li><a href="#nos-animaux">Nos animaux</a></li>
+            <li><a href="#conservation">Conservation</a></li>
+            <li><a href="#gallerie-photo">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#connexion">Connexion</a></li>
+            <li><a href="#plan">Plan du site</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="habitats">
+            <div class="section-content">
+                <h2>Nos Habitats</h2>
+                <div class="habitats-grid">
+                    <div class="habitat">
+                        <img src="savane.jpg" alt="Habitat Savane">
+                        <div class="habitat-description">
+                            <h3>Savane</h3>
+                            <p>Découvrez la faune emblématique de la savane, y compris les lions, éléphants et girafes. <a href="habitat-savane.html">En savoir plus</a></p>
+                        </div>
+                    </div>
+                    <div class="habitat">
+                        <img src="forêts tropicales avec ses singes, toucans et reptiles da.jpg" alt="Habitat Forêt tropicale">
+                        <div class="habitat-description">
+                            <h3>Forêt tropicale</h3>
+                            <p>Explorez la biodiversité riche des forêts tropicales avec ses singes, toucans et reptiles. <a href="habitat-foret-tropicale.html">En savoir plus</a></p>
+                        </div>
+                    </div>
+                    <div class="habitat">
+                        <img src="Firefly Rencontrez les animaux adaptés au froid extrême comme les ours polaires et les phoques dans .jpg" alt="Habitat Arctique">
+                        <div class="habitat-description">
+                            <h3>Arctique</h3>
+                            <p>Rencontrez les animaux adaptés au froid extrême comme les ours polaires et les phoques. <a href="habitat-arctique.html">En savoir plus</a></p>
+                        </div>
+                    </div>
+                    <div class="habitat">
+                        <img src="desert.jpg" alt="Habitat Désert">
+                        <div class="habitat-description">
+                            <h3>Désert</h3>
+                            <p>Découvrez la vie dans les déserts avec les chameaux, suricates et reptiles. <a href="habitat-desert.html">En savoir plus</a></p>
+                        </div>
+                    </div>
+                    <div class="habitat">
+                        <img src="la forêt tempérée .jpg" alt="Habitat Forêt tempérée">
+                        <div class="habitat-description">
+                            <h3>Forêt tempérée</h3>
+                            <p>Explorez la forêt tempérée avec ses cerfs, renards et hiboux. <a href="habitat-foret-temperee.html">En savoir plus</a></p>
+                        </div>
+                    </div>
+                    <div class="habitat">
+                        <img src="marecage.jpg" alt="Habitat Zones humides">
+                        <div class="habitat-description">
+                            <h3>Zones humides</h3>
+                            <p>Découvrez la vie dans les marécages et les mangroves avec ses crocodiles et oiseaux aquatiques. <a href="habitat-zones-humides.html">En savoir plus</a></p>
+                        </div>
+                    </div>
+                    <div class="habitat">
+                        <img src="zoomontagnes,.jpg" alt="Habitat Montagne">
+                        <div class="habitat-description">
+                            <h3>Montagne</h3>
+                            <p>Explorez les hauteurs avec les chèvres des montagnes, les aigles et les léopards des neiges. <a href="habitat-montagne.html">En savoir plus</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="content">
+            <p>&copy; 2024 Arcadia Nature Zoo. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

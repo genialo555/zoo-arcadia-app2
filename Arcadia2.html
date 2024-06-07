@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia</title>
+    <script src="scriptzoo.js" defer></script>
+    <link rel="stylesheet" href="style3_adaptive.css">
+</head>
+<body>
+    <div class="slide-container">
+        <div class="custom-slider fade">
+            <div class="slide-index">1 / 6</div>
+            <img class="slide-img" src="image bin/imagesbanner.jpg" alt="Slide 1">
+            <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+        
+        <div class="custom-slider fade">
+            <div class="slide-index">2 / 6</div>
+            <img class="slide-img" src="image bin/marecage.jpg" alt="Slide 2">
+            <div class="slide-text">Découvrez nos protégés.</div>
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">3 / 6</div>
+            <img class="slide-img" src="image bin/savane.jpg" alt="Slide 3">
+            <div class="slide-text">Nullam luctus aliquam ornare.</div>
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">4 / 6</div>
+            <img class="slide-img" src="image bin/Firefly Rencontrez les animaux adaptés au froid extrême comme les ours polaires et les phoques dans .jpg"alt="Slide 4">
+            <div class="slide-text">Nullam luctus aliquam ornare.</div>
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">5 / 6</div>
+            <img class="slide-img" src="image bin\zoomontagnes,.jpg" alt="Slide 5">
+            <div class="slide-text">Nullam luctus aliquam ornare.</div>
+        
+        </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <br>
+    <div class="slide-dot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    
+    <div class="topnav-container">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="topnav" id="topnav">
+            <a href="#home" class="active">Arcadia</a>
+            <a href="#habitats">Habitats</a>
+            <a href="#restauration">Restauration</a>
+            <a href="#nous-trouver">Nous trouver</a>
+            <a href="#connexion">Connexion</a>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <a href="#home" class="active">Arcadia</a>
+            <a href="#habitats">Habitats</a>
+            <a href="#restauration">Restauration</a>
+            <a href="#nous-trouver">Nous trouver</a>
+            <a href="#connexion">Connexion</a>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#notre-histoire">Qui sommes-nous ?</a></li>
+            <li><a href="#actualité">Nos derniers engagements</a></li>
+            <li><a href="habitats.html">Habitat</a></li>
+            <li><a href="#conservation">Conservation</a></li>
+            <li><a href="#gallerie-photo">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#connexion">Connexion</a></li>
+            <li><a href="#plan">Plan du site</a></li>
+            <li><a href="#rechercher">Rechercher</a></li>
+        </ul>
+    </nav>
+
+    <section id="notre-histoire">
+        <div class="section-content">
+            <h2>Notre histoire</h2>
+            <img src="image bin/imageapropos.jpg" alt="À propos image">
+            <p>Un sanctuaire dédié à la préservation de la vie sauvage et à l'éducation du public.</p>
+        </div>
+    </section>
+
+    <section id="nos-animaux">
+        <div class="section-content">
+            <h2>Nos animaux</h2>
+            <img src="image bin/nos_animaux.jpg" alt="Nos animaux image">
+            <p>Découvrez un monde de merveilles sauvages où les pandas roux gambadent parmi les bambous, les manchots se pavanent sur la glace, et les jaguars se préparent à retrouver leur liberté dans les jungles d'Amérique centrale, seulement à l'Arcadia Zoo Moderne.</p>
+        </div>
+    </section>
+
+    <section id="conservation">
+        <div class="section-content">
+            <h2>Conservation</h2>
+            <img src="conservation.jpg" alt="Conservation image">
+            <p>Arcadia crée des habitats naturels précis pour chaque espèce, soutient la recherche et la reproduction assistée, et sensibilise le public à travers des programmes éducatifs. En réintroduisant avec succès des espèces en voie de disparition dans leur environnement naturel, Arcadia s'engage à protéger la biodiversité et à inspirer un changement positif pour une coexistence harmonieuse avec la nature.</p>
+        </div>
+    </section>
+
+    <section id="gallerie-photo">
+        <div class="section-content">
+            <h2>Galerie</h2>
+            <div id="app">
+                <photo-gallery :images="galleryImages"></photo-gallery>
+            </div>
+        </div>
+    </section>
+
+    <section id="animal-search">
+        <div class="section-content">
+            <h2>Recherche d'animaux</h2>
+            <p></p>
+        </div>
+    </section>
+
+    <section id="live-webcams">
+        <div class="section-content">
+            <h2>Webcams en direct</h2>
+            <p>Incorporez des webcams en direct dans votre site Web, offrant aux visiteurs la possibilité de voir les animaux en temps réel depuis différents enclos.</p>
+        </div>
+    </section>
+
+    <section id="virtual-reality">
+        <div class="section-content">
+            <h2>Expérience de réalité virtuelle</h2>
+            <p>Fournissez une expérience de réalité virtuelle (VR) où les visiteurs peuvent explorer votre zoo à travers des vidéos immersives à 360 degrés ou des visites VR interactives.</p>
+        </div>
+    </section>
+
+    <section id="educational-resources">
+        <div class="section-content">
+            <h2>Ressources éducatives</h2>
+            <p>Élargissez vos ressources éducatives en incluant des matériaux téléchargeables tels que des fiches d'activités, des vidéos éducatives et des quiz interactifs sur la faune et la conservation.</p>
+        </div>
+    </section>
+
+    <section id="animal-adoption">
+        <div class="section-content">
+            <h2>Programme d'adoption d'animaux</h2>
+            <p>Créez un programme d'adoption d'animaux où les visiteurs peuvent symboliquement adopter leurs animaux préférés.</p>
+        </div>
+    </section>
+
+    <section id="zookeeper-blogs">
+        <div class="section-content">
+            <h2>Blogs des gardiens de zoo</h2>
+            <p>Introduisez des blogs écrits par les gardiens de zoo partageant des informations, des histoires et des expériences en coulisses sur les soins aux animaux et les efforts de conservation.</p>
+        </div>
+    </section>
+
+    <section id="feeding-schedule">
+        <div class="section-content">
+            <h2>Programme d'alimentation interactif</h2>
+            <p>Affichez un programme d'alimentation interactif pour différents animaux, permettant aux visiteurs de connaître les heures d'alimentation et de participer virtuellement aux séances d'alimentation.</p>
+        </div>
+    </section>
+
+    <section id="photo-booth">
+        <div class="section-content">
+            <h2>Photomaton</h2>
+            <p>Installez un photomaton virtuel où les visiteurs peuvent prendre des selfies avec des filtres ou des superpositions thématiques d'animaux, les encourageant à partager leurs expériences sur les réseaux sociaux.</p>
+        </div>
+    </section>
+
+    <section id="seasonal-events">
+        <div class="section-content">
+            <h2>Devenez soigneur d'un jour</h2>
+            <p>Expositions spéciales organisées dans votre zoo, tels que des activités thématiques de vacances, des visites nocturnes ou des camps d'été pour enfants.</p>
+        </div>
+    </section>
+
+    <section id="community-engagement">
+        <div class="section-content">
+            <h2>Chaque avis compte</h2>
+            <p>Dites-nous en plus sur votre expérience chez nous !</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Arcadia Zoo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
